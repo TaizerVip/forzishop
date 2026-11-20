@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>FORZI SHOP — премиальная одежда</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:wght@400;500;700&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ГЛАВНАЯ ===== -->
+<header class="hero" id="hero">
+  <div class="logo">
+    <img src="assets/logo.png" alt="FORZI SHOP — магазин одежды" id="logoImg">
+    <div class="logo-text" id="logoText" hidden>
+    
+      <span class="logo-main">FORZI</span><span class="logo-sub">SHOP</span>
+    </div>
+  </div>
+
+  <!-- Феникс: можно перетаскивать -->
+  <div class="phoenix" id="phoenix" aria-label="Золотой феникс — потяните его">
+    <img src="assets/phoenix.png" alt="" draggable="false" id="phoenixImg">
+  </div>
+
+  <a href="#catalog" class="btn btn-gold hero-btn">Смотреть коллекцию</a>
+</header>
+
+<!-- ===== БЕГУЩАЯ ЛЕНТА: две пересекающиеся ленты ===== -->
+<section class="ticker" aria-label="Лимитированный дроп, эксклюзив">
+  <div class="tk tk-b" aria-hidden="true"><div class="tk-track"><div class="tk-grp"><span>Возрождайся</span><span>Premium streetwear</span><span>Только у нас</span><span>Rise from the ashes</span><span>Возрождайся</span><span>Premium streetwear</span><span>Только у нас</span><span>Rise from the ashes</span></div><div class="tk-grp"><span>Возрождайся</span><span>Premium streetwear</span><span>Только у нас</span><span>Rise from the ashes</span><span>Возрождайся</span><span>Premium streetwear</span><span>Только у нас</span><span>Rise from the ashes</span></div></div></div>
+  <div class="tk tk-a"><div class="tk-track"><div class="tk-grp"><span>Лимитированный дроп</span><span>Эксклюзив</span><span>FORZI SHOP</span><span>Ограниченный тираж</span><span>Лимитированный дроп</span><span>Эксклюзив</span><span>FORZI SHOP</span><span>Ограниченный тираж</span></div><div class="tk-grp" aria-hidden="true"><span>Лимитированный дроп</span><span>Эксклюзив</span><span>FORZI SHOP</span><span>Ограниченный тираж</span><span>Лимитированный дроп</span><span>Эксклюзив</span><span>FORZI SHOP</span><span>Ограниченный тираж</span></div></div></div>
+</section>
+
+<!-- ===== КАТАЛОГ ===== -->
+<section class="about">
+  <h2 class="title">Премиальное качество</h2>
+  <p>Мы делаем одежду, за которую не стыдно. Плотные ткани, чистые принты, аккуратные швы — каждая вещь проходит проверку перед отправкой.
+  К каждому покупателю относимся серьёзно: уточняем детали заказа, отвечаем на вопросы, упаковываем в фирменный зип-пакет и бокс.</p>
+</section>
+
+<main id="catalog" class="catalog">
+  <h2 class="title">Каталог</h2>
+  <div class="grid" id="grid"></div>
+</main>
+
+<!-- ===== СООБЩЕСТВО ===== -->
+<section class="join" id="join">
+  <h2 class="title">Сообщество</h2>
+  <p class="lead">Закрытый чат, новости дропов и стримы — будь в центре движения FORZI.</p>
+  <div class="join-btns">
+    <a class="btn btn-gold" data-link="telegram" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.5 4.2L2.6 11.4l5.2 1.9 2 6.2 3-3.6 4.9 3.6zM8.7 13.1l9-5.6-6.7 6.4-.3 3.1z"/></svg><span>VIP CHAT</span></a>
+    <a class="btn btn-line" data-link="twitch" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" fill-rule="evenodd"><path d="M4 3L3 7v13h4.5v3h3l3-3h4L21 15V3H4zm15.5 11l-3 3h-5l-3 2.5V17H6V5h13.5v9zM15 8h2v5h-2V8zm-5 0h2v5h-2V8z"/></svg><span>Наш Twitch</span></a>
+    <a class="btn btn-gold" data-link="channel" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.5 4.2L2.6 11.4l5.2 1.9 2 6.2 3-3.6 4.9 3.6zM8.7 13.1l9-5.6-6.7 6.4-.3 3.1z"/></svg><span>Telegram-канал</span></a>
+  </div>
+</section>
+
+<!-- ===== КОМАНДА ===== -->
+<section class="team" id="team">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D4AF37"/><stop offset=".5" stop-color="#F5D76E"/><stop offset="1" stop-color="#D4AF37"/></linearGradient>
+  <radialGradient id="hg" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#2a2a2a"/><stop offset="1" stop-color="#000"/></radialGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#fff6c8" stop-opacity=".95"/><stop offset="1" stop-color="#F5D76E" stop-opacity="0"/></radialGradient>
+  <linearGradient id="scang" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".5" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+  <clipPath id="crc"><path d="M70 62 L76 36 L90 52 L100 30 L110 52 L124 36 L130 62Z"/></clipPath>
+  <clipPath id="cc"><circle cx="100" cy="100" r="98"/></clipPath>
+  <symbol id="bgc" viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="url(#gold)"/></symbol>
+</defs></svg>
+  <span class="kicker">Команда</span>
+  <h2>Кто мы?</h2>
+  <p class="lead">Самая важная ценность любой компании — это люди, которые в ней работают</p>
+  <div class="team-grid">
+    <article class="member m-call" tabindex="0"><div class="avatar"><svg viewBox="0 0 200 200" role="img" aria-label="Рекламщик"><use href="#bgc"/><g clip-path="url(#cc)"><g class="fig"><path d="M28 205 C28 158 58 138 100 138 C142 138 172 158 172 205Z" fill="url(#hg)" stroke="#000" stroke-width="2"/><circle class="lit litL" cx="68" cy="100" r="48" fill="url(#glow)"/>
+ <g class="headg"><circle cx="100" cy="98" r="42" fill="url(#hg)" stroke="#000" stroke-width="2"/><g class="eyes"><polygon points="70,93 98,99 95,105 74,103" fill="#fff"/><polygon points="130,93 102,99 105,105 126,103" fill="#fff"/></g></g>
+ <g class="donor"><path d="M34 205 Q38 168 84 160" stroke="#0a0a0a" stroke-width="17" stroke-linecap="round" fill="none"/><rect x="84" y="122" width="32" height="56" rx="5" fill="#1b1b1b" stroke="#000" stroke-width="2"/><rect class="screen" x="87" y="126" width="26" height="48" rx="3" fill="#ffe9a0"/><text x="100" y="156" text-anchor="middle" font-family="Pirata One,serif" font-size="26" fill="#000" opacity=".75">$</text><circle class="ripple" cx="100" cy="150" r="6" fill="none" stroke="#000" stroke-width="2"/><circle cx="86" cy="158" r="8.5" fill="#0a0a0a" stroke="#000" stroke-width="1.5"/><g class="tapper"><path d="M168 205 Q166 172 110 154" stroke="#0a0a0a" stroke-width="16" stroke-linecap="round" fill="none"/><circle cx="102" cy="151" r="7.5" fill="#0a0a0a" stroke="#000" stroke-width="1.5"/></g><g class="fly b1"><rect x="89" y="144" width="22" height="12" rx="2" fill="#1b1b1b" stroke="#000" stroke-width="1.5"/><text x="100" y="153.5" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="10" fill="#F5D76E">$</text></g><g class="fly b2"><rect x="89" y="144" width="22" height="12" rx="2" fill="#1b1b1b" stroke="#000" stroke-width="1.5"/><text x="100" y="153.5" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="10" fill="#F5D76E">$</text></g><g class="fly b3"><rect x="89" y="144" width="22" height="12" rx="2" fill="#1b1b1b" stroke="#000" stroke-width="1.5"/><text x="100" y="153.5" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="10" fill="#F5D76E">$</text></g><g class="fly k1"><circle cx="100" cy="150" r="7.5" fill="#fff3b0" stroke="#000" stroke-width="1.8"/><text x="100" y="154" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="10" fill="#000">$</text></g><g class="fly k2"><circle cx="100" cy="150" r="7.5" fill="#fff3b0" stroke="#000" stroke-width="1.8"/><text x="100" y="154" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="10" fill="#000">$</text></g><g class="fly k3"><circle cx="100" cy="150" r="7.5" fill="#fff3b0" stroke="#000" stroke-width="1.8"/><text x="100" y="154" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="10" fill="#000">$</text></g></g></g></g></g></svg></div><h3>Top Donator</h3><p>Именно ты можешь быть</p></article>
+    <article class="member m-boss" tabindex="0"><div class="avatar"><svg viewBox="0 0 200 200" role="img" aria-label="FORZI"><use href="#bgc"/><g clip-path="url(#cc)"><circle class="aura" cx="100" cy="110" r="70" fill="url(#glow)"/><g class="fig"><path d="M28 205 C28 158 58 138 100 138 C142 138 172 158 172 205Z" fill="url(#hg)" stroke="#000" stroke-width="2"/>
+ <g class="headg"><circle cx="100" cy="98" r="42" fill="url(#hg)" stroke="#000" stroke-width="2"/><g class="gold-eyes"><g class="eyes"><polygon points="70,93 98,99 95,105 74,103" fill="#fff"/><polygon points="130,93 102,99 105,105 126,103" fill="#fff"/></g></g></g><g class="crown"><path d="M70 62 L76 36 L90 52 L100 30 L110 52 L124 36 L130 62Z" fill="#0a0a0a" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+ <circle cx="76" cy="36" r="3" fill="#F5D76E"/><circle cx="100" cy="30" r="3.4" fill="#F5D76E"/><circle cx="124" cy="36" r="3" fill="#F5D76E"/>
+ <g clip-path="url(#crc)"><rect class="shine" x="60" y="26" width="14" height="40" fill="#fff" opacity=".0" transform="skewX(-20)"/></g></g>
+ <text x="100" y="188" text-anchor="middle" font-family="Pirata One,serif" font-size="24" fill="#F5D76E" letter-spacing="2">FORZI</text></g></g></svg></div><h3>FORZI</h3><p>Главарь</p></article>
+    <article class="member m-mod" tabindex="0"><div class="avatar"><svg viewBox="0 0 200 200" role="img" aria-label="Модератор"><use href="#bgc"/><g clip-path="url(#cc)"><g class="fig"><path d="M28 205 C28 158 58 138 100 138 C142 138 172 158 172 205Z" fill="url(#hg)" stroke="#000" stroke-width="2"/><g class="headg"><circle cx="100" cy="98" r="42" fill="url(#hg)" stroke="#000" stroke-width="2"/><g class="scanner"><g class="eyes"><polygon points="70,93 98,99 95,105 74,103" fill="#fff"/><polygon points="130,93 102,99 105,105 126,103" fill="#fff"/></g></g>
+ <path d="M60 98 C58 55 142 55 140 98" stroke="#2b2b2b" stroke-width="5" fill="none"/>
+ <rect x="54" y="94" width="9" height="22" rx="4" fill="#1b1b1b" stroke="#000"/><rect x="137" y="94" width="9" height="22" rx="4" fill="#1b1b1b" stroke="#000"/>
+ <path d="M58 116 Q62 138 84 140" stroke="#1b1b1b" stroke-width="3" fill="none"/><circle class="led" cx="86" cy="140" r="3.5" fill="#F5D76E"/></g></g>
+ <g class="scan"><rect x="0" y="0" width="200" height="14" fill="url(#scang)"/></g></g></svg></div><h3>Manager</h3><p>Управление магазином и развитие FORZI<br><a href="https://t.me/forzi_manager" target="_blank" rel="noopener">@forzi_manager</a></p></article>
+    <article class="member m-clip" tabindex="0"><div class="avatar"><svg viewBox="0 0 200 200" role="img" aria-label="Top Clipper"><defs>
+<symbol id="ic-eye" viewBox="0 0 24 24"><path d="M1.5 12C4.5 6.5 8 4.5 12 4.5s7.5 2 10.5 7.5C19.5 17.5 16 19.5 12 19.5S4.5 17.5 1.5 12z" fill="#0a0a0a"/><circle cx="12" cy="12" r="4.6" fill="#F5D76E"/><circle cx="12" cy="12" r="2.3" fill="#0a0a0a"/></symbol>
+<symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 21.5S2.5 15.6 2.5 8.9C2.5 5.8 4.9 3.6 7.6 3.6c1.8 0 3.3.9 4.4 2.5 1.1-1.6 2.6-2.5 4.4-2.5 2.7 0 5.1 2.2 5.1 5.3 0 6.7-9.5 12.6-9.5 12.6z" fill="#0a0a0a"/></symbol>
+<symbol id="ic-plus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="#0a0a0a"/><path d="M12 6.5v11M6.5 12h11" stroke="#F5D76E" stroke-width="2.8" stroke-linecap="round"/></symbol>
+<clipPath id="scr"><rect x="83.5" y="129" width="33" height="58" rx="4"/></clipPath></defs>
+<use href="#bgc"/><g clip-path="url(#cc)"><g class="ic ic-e" style="--d:0s"><use href="#ic-eye" x="28" y="58" width="26" height="26"/></g><g class="ic ic-h" style="--d:0.5s"><use href="#ic-heart" x="18" y="100" width="22" height="22"/></g><g class="ic ic-p" style="--d:1.0s"><use href="#ic-plus" x="26" y="138" width="20" height="20"/></g><g class="ic ic-p" style="--d:0.3s"><use href="#ic-plus" x="150" y="40" width="22" height="22"/></g><g class="ic ic-e" style="--d:0.8s"><use href="#ic-eye" x="160" y="98" width="24" height="24"/></g><g class="ic ic-h" style="--d:1.3s"><use href="#ic-heart" x="160" y="126" width="20" height="20"/></g><g class="ic ic-h" style="--d:1.6s"><use href="#ic-heart" x="72" y="18" width="20" height="20"/></g><g class="ic ic-p" style="--d:2.0s"><use href="#ic-plus" x="106" y="12" width="18" height="18"/></g><g class="ic ic-e" style="--d:2.3s"><use href="#ic-eye" x="126" y="20" width="22" height="22"/></g>
+<g class="fig"><path d="M28 205 C28 158 58 138 100 138 C142 138 172 158 172 205Z" fill="url(#hg)" stroke="#000" stroke-width="2"/>
+<g class="headg"><circle cx="100" cy="98" r="42" fill="url(#hg)" stroke="#000" stroke-width="2"/><g class="eyes"><polygon points="70,93 98,99 95,105 74,103" fill="#fff"/><polygon points="130,93 102,99 105,105 126,103" fill="#fff"/></g>
+<path d="M60 82 C60 48 140 48 140 82 C124 74 76 74 60 82Z" fill="#050505" stroke="#000" stroke-width="2"/><path d="M116 79 Q158 76 168 90 Q140 92 114 87Z" fill="#050505" stroke="#000" stroke-width="2"/><circle cx="100" cy="63" r="3" fill="#F5D76E"/></g>
+<circle class="lit" cx="100" cy="152" r="46" fill="url(#glow)"/>
+<path d="M44 206 Q56 178 74 176" stroke="#2c2c2c" stroke-width="17" stroke-linecap="round" fill="none"/><path d="M156 206 Q144 178 126 176" stroke="#2c2c2c" stroke-width="17" stroke-linecap="round" fill="none"/>
+<path d="M44 206 Q56 178 74 176" stroke="#0a0a0a" stroke-width="15" stroke-linecap="round" fill="none"/><path d="M156 206 Q144 178 126 176" stroke="#0a0a0a" stroke-width="15" stroke-linecap="round" fill="none"/>
+<g class="phone"><rect x="79" y="124" width="42" height="68" rx="7" fill="#101010" stroke="#3a3a3a" stroke-width="1.5"/><rect x="83.5" y="129" width="33" height="58" rx="4" fill="#ffe9a0" class="screen"/>
+<g clip-path="url(#scr)"><g class="feed"><rect x="84" y="134" width="32" height="26" rx="3" fill="#1b1b1b"/><path d="M96 142 l9 5 -9 5z" fill="#F5D76E"/><rect x="88" y="155" width="18" height="2" rx="1" fill="#F5D76E" opacity=".6"/><rect x="84" y="166" width="32" height="26" rx="3" fill="#2a2118"/><path d="M96 174 l9 5 -9 5z" fill="#F5D76E"/><rect x="88" y="187" width="18" height="2" rx="1" fill="#F5D76E" opacity=".6"/><rect x="84" y="198" width="32" height="26" rx="3" fill="#1b1b1b"/><path d="M96 206 l9 5 -9 5z" fill="#F5D76E"/><rect x="88" y="219" width="18" height="2" rx="1" fill="#F5D76E" opacity=".6"/><rect x="84" y="230" width="32" height="26" rx="3" fill="#2a2118"/><path d="M96 238 l9 5 -9 5z" fill="#F5D76E"/><rect x="88" y="251" width="18" height="2" rx="1" fill="#F5D76E" opacity=".6"/></g></g><rect x="94" y="130.5" width="12" height="2.6" rx="1.3" fill="#101010"/></g>
+<ellipse cx="77" cy="176" rx="9" ry="13" fill="#0a0a0a" stroke="#2c2c2c" stroke-width="1.5"/><ellipse cx="85" cy="152" rx="3.6" ry="9" fill="#0a0a0a" stroke="#2c2c2c" stroke-width="1.2" transform="rotate(6 85 152)"/>
+<ellipse cx="123" cy="176" rx="9" ry="13" fill="#0a0a0a" stroke="#2c2c2c" stroke-width="1.5"/><ellipse class="thumb" cx="113" cy="170" rx="4.4" ry="9.5" fill="#0a0a0a" stroke="#2c2c2c" stroke-width="1.2"/></g></g></svg></div><h3>Top Clipper</h3><p>Именно ты можешь быть</p></article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="foot">
+    <div class="foot-left">
+      <div class="flinks"><a data-link="telegram" href="#" target="_blank" rel="noopener">Telegram</a><a data-link="twitch" href="#" target="_blank" rel="noopener">Twitch</a><a data-link="channel" href="#" target="_blank" rel="noopener">Канал</a></div>
+      <span class="copy">© FORZI SHOP</span>
+      <div class="donate"><img src="assets/qr-donate.png" alt="QR-код для пожертвования" width="96" height="96" loading="lazy"><div><b>Поддержать проект</b><span>Пожертвование на развитие FORZI</span></div></div>
+    </div>
+    <div class="foot-right">
+      <div class="pgroup">
+        <h4>Доставка</h4>
+        <ul class="logos">
+        <li class="brand" title="СДЭК"><span class="mark"><img src="assets/pay/cdek.svg" alt="СДЭК" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><b class="wm" style="color:#2FBF4F">СДЭК</b></span><small>СДЭК</small></li>        <li class="brand" title="Почта России"><span class="mark"><img src="assets/pay/pochta.svg" alt="Почта России" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><b class="wm two" style="color:#3B8BFF">Почта<br>России</b></span><small>Почта России</small></li>        <li class="brand" title="Авито Доставка"><span class="mark"><img src="assets/pay/avito.svg" alt="Авито Доставка" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><span class="wm av"><i style="background:#04E061"></i><i style="background:#0099F7"></i><i style="background:#FF4053"></i><i style="background:#965EEB"></i><b>Авито</b></span></span><small>Авито</small></li>        <li class="brand" title="5Post"><span class="mark"><img src="assets/pay/5post.svg" alt="5Post" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><b class="wm" style="color:#fff;letter-spacing:.02em">5post</b></span><small>5Post</small></li>        <li class="brand" title="Ozon"><span class="mark"><img src="assets/pay/ozon.svg" alt="Ozon" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><b class="wm" style="color:#2A73FF;font-size:16px">ozon</b></span><small>Ozon</small></li>
+        </ul>
+      </div>
+      <div class="pgroup">
+        <h4>Оплата</h4>
+        <ul class="logos">
+        <li class="brand" title="Криптовалюта"><span class="mark"><img src="assets/pay/bitcoin.svg" alt="Криптовалюта" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><svg class="wm" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#F7931A"/><path d="M12 9h5.2a3 3 0 010 6H12zm0 6h5.8a3.2 3.2 0 010 6.4H12zM12 9v12.4M14.6 6.8V9m3 -2.2V9m-3 12.4v2.2m3-2.2v2.2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><small>Криптовалюта</small></li>        <li class="brand" title="СБП"><span class="mark"><img src="assets/pay/sbp.svg" alt="СБП" onload="this.closest('.mark').classList.add('img')" onerror="this.remove()"><b class="wm sbp">СБП</b></span><small>СБП</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== ЗАКАЗ (модальное окно) ===== -->
+<div class="modal" id="modal" hidden>
+  <div class="compose">
+  <!-- декоративный чек (ПК: слева от формы) -->
+  <aside class="receipt rc-desk" data-receipt aria-hidden="true"></aside>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <button class="close" id="closeBtn" aria-label="Закрыть">×</button>
+
+    <form id="orderForm" novalidate>
+      <h3 id="orderTitle">Заказ</h3>
+      <!-- декоративный чек (телефон: под заголовком, нажатие на рулончик сворачивает/разворачивает) -->
+      <div class="receipt rc-mob" data-receipt aria-hidden="true"></div>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off"><!-- ловушка для ботов -->
+
+      <label>Имя<input name="name" autocomplete="name" placeholder="Ваше имя"></label>
+      <label>Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"></label>
+      <label>Telegram для связи<input name="tg" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="@username"></label>
+      <label>Город<input name="city" autocomplete="address-level2" placeholder="Ташкент"></label>
+      <label>Точный адрес<input name="address" autocomplete="street-address" placeholder="Улица, дом, кв."></label>
+
+      <div class="row">
+        <label>Размер
+          <select name="size"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select>
+        </label>
+        <div class="qty-wrap"><span>Количество</span>
+          <div class="qty">
+            <button type="button" data-q="-1">−</button><b id="qty">1</b><button type="button" data-q="1">+</button>
+          </div>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Доставка</legend>
+        <label class="radio"><input type="radio" name="delivery" value="courier" checked><span>Курьер</span><em id="courierPrice"></em></label>
+        <label class="radio"><input type="radio" name="delivery" value="pickup"><span>Самовывоз</span><em>0 ₽</em></label>
+      </fieldset>
+
+      <label>Комментарий<textarea name="comment" rows="2" placeholder="Необязательно"></textarea></label>
+
+      <div class="sum">
+        <div><span>Товар</span><span id="sItem"></span></div>
+        <div><span>Доставка</span><span id="sDel"></span></div>
+        <div class="total"><span>ИТОГО</span><span id="sTotal"></span></div>
+        <div class="pay"><span>Оплата сейчас</span><span id="sPay"></span></div>
+      </div>
+
+      <p class="paynote">Оплата проходит на защищённой странице платёжного сервиса. После оплаты заказ сразу поступает к нам.</p>
+      <p class="error" id="formError" hidden></p>
+      <button type="submit" class="btn btn-gold" id="submitBtn">Подтвердить заказ</button>
+    </form>
+
+    <div class="success" id="success" hidden>
+      <div class="ok" id="okIcon">✓</div>
+      <h3 id="okTitle">Спасибо!</h3>
+      <p id="okText">Мы скоро свяжемся с вами.</p>
+      <p class="num" id="orderNum"></p>
+      <button class="btn btn-gold" id="doneBtn">Закрыть</button>
+    </div>
+  </div>
+  <!-- печать: «ставится» в правый нижний угол после нажатия «Оплатить» -->
+  <div class="stamp" id="stamp" aria-hidden="true">
+    <i class="stamp-wave"></i>
+    <i class="sp" style="--a:0deg"></i><i class="sp" style="--a:45deg"></i><i class="sp" style="--a:90deg"></i><i class="sp" style="--a:135deg"></i>
+    <i class="sp" style="--a:180deg"></i><i class="sp" style="--a:225deg"></i><i class="sp" style="--a:270deg"></i><i class="sp" style="--a:315deg"></i>
+    <svg class="stamp-svg" viewBox="0 0 200 200">
+      <defs>
+        <linearGradient id="stG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5D76E"/><stop offset=".5" stop-color="#D4AF37"/><stop offset="1" stop-color="#F5D76E"/></linearGradient>
+        <path id="stC" d="M100,100 m-71,0 a71,71 0 1,1 142,0 a71,71 0 1,1 -142,0"/>
+        <filter id="stRough" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" result="d"/>
+          <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="9" result="w"/>
+          <feColorMatrix in="w" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -7 4.6" result="m"/>
+          <feComposite in="d" in2="m" operator="in"/>
+        </filter>
+      </defs>
+      <g filter="url(#stRough)" fill="none" stroke="url(#stG)">
+        <circle cx="100" cy="100" r="94" stroke-width="5"/>
+        <circle cx="100" cy="100" r="86" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="55" stroke-width="2"/>
+        <text font-family="'Pirata One',serif" font-size="17" fill="url(#stG)" stroke="none" textLength="440" lengthAdjust="spacing"><textPath href="#stC">ORDER ✦ FORZI SHOP ✦ PREMIUM ✦ </textPath></text>
+        <text x="100" y="116" text-anchor="middle" font-family="'Pirata One',serif" font-size="44" fill="url(#stG)" stroke="none">FORZI</text>
+        <path d="M70 128 H130" stroke-width="1.5"/>
+        <text x="100" y="146" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" letter-spacing="4" fill="url(#stG)" stroke="none">SHOP</text>
+      </g>
+    </svg>
+  </div>
+  </div><!-- /compose -->
+</div>
+
+<!-- ===== Просмотр фото с приближением ===== -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Закрыть">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Предыдущее фото">‹</button>
+  <div class="lb-stage" id="lbStage"><img id="lbImg" alt="" draggable="false"></div>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Следующее фото">›</button>
+  <div class="lb-hint" id="lbHint"></div>
+</div>
+
+<script src="js/phoenix-points.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
